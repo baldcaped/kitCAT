@@ -1,6 +1,28 @@
 body {
     font-family: 'Montserrat';
+    margin: 0%;
+}
+
+.front-page {
     background-color : #1B2430 ;
+}
+
+@media (max-width : 1000px) {
+    .main-page {
+        text-align: center;
+    }
+
+    .price-intro {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .cat-1 {
+        width: 90% !important; 
+        padding: 0 !important;
+    }
 }
 
 h1 {
@@ -26,8 +48,8 @@ i {
 .big-des {
     color: white;
     margin-top: 20px;
-    font-size: 3.4rem;
-    min-width: 80%;
+    font-size: 2rem;
+   
     
 }
 
@@ -44,14 +66,16 @@ i {
 }
 
 .cat-1 {
-    margin-left: 30px;
     transform: rotate(15deg);
-    max-width: 90%;
-    
+    width: 50%;
+    padding: 5%;
+/*     
     position : relative;
     top : 5px;
     height : auto;
+*/
 }
+
 
 .basic-info {
     color: #c2d4d3;
@@ -59,9 +83,7 @@ i {
 
 .container-fluid {
     padding: 3% 10% ;
-    width: auto;
     margin: 0;
-
 }
 
 .nav-item {
@@ -93,8 +115,13 @@ nav-link:hover {
     background-color: rgb(255, 255, 255);
     color: #1B2430;
     text-align: center;
-    padding: 8% 32px 10%;
+    padding: 8% 32px 8%;
+    position: relative;
+    z-index: 1;
+}
 
+.fea {
+    margin: 3% 0 3%;
 }
 
 .fa-4x {
@@ -106,28 +133,136 @@ nav-link:hover {
     color: #1B2430;
 }
 
+/* reviews */
+
+.review-content {
+   margin-bottom: 1.2rem;
+   font-weight: 700; 
+   font-size: 2rem; 
+   color: #fff;
+}
+
 .reviews {
-    padding: 7% 15% 6%;
+    padding: 7% 15% 5%;
     text-align: center;
     background-color: #2b3a4d;
 }
 
 .review-img {
     width: 10%;
-    margin-top: 20px;
+    margin-right: 10px;
     border-radius: 50%;
 }
 
 .reviewer {
-    margin: 50px 20px 0;
     font-weight: 500;
     color: #c2d4d3;
-
 }
 
 /* press */
 
 .press {
     background-color: #2b3a4d;
+}
 
+.press-img {
+    width: 22%;
+    padding: 4%;
+}
+
+.Business_Insider_Logo{
+   width: 20%;
+}
+
+/* pricing */
+
+.price-intro {
+    padding: 5% 8% 0;
+}
+
+.price-intro-head {
+    color: #1B2430;
+}
+
+.price-intro-des {
+    color: #4e4e4e;
+    font-size: 1.2rem;
+}
+
+.pricing {
+    padding: 5%;
+    margin: 0;
+}
+
+.pricing-font {
+    color: #ccdbdb;
+}
+
+.pricing-header {
+    background-color: #1B2430;
+    border: none;
+}
+
+.pricing-card {
+    color: white;
+    background-color : #2b3a4d ;
+    margin: 5%;
+}
+
+.pricing-card:hover {
+    background-color: #1B2430;
+}
+
+/* footer */
+
+footer {
+    background-color: #1B2430;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    
+}
+
+.footer-text {
+    margin-bottom: 0;
+
+}
+
+.bottom-down {
+    margin-bottom: 5%
+}
+
+.contact {
+    width: 1%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.cp {
+
+    font-size: 60% ;
+    text-align: center;
+    margin-top: 5%;
+    color: #1B2430;
+    
+
+}
+
+.contact-info {
+    padding: 5% 30% ;
+}
+
+@media only screen and (min-width: 992px) {
+    .contact-info {
+        padding: 5% 40% ;   
+    }
+
+}
+
+a {
+    color: #2b3a4d ;
+}
+
+a:hover {
+    color: #1B2430;
 }

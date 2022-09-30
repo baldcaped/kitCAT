@@ -9,6 +9,10 @@
         <script src="https://kit.fontawesome.com/5dc0cc01cf.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat:wght@300;400;500;600;700;900&family=Sacramento&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> 
@@ -19,7 +23,9 @@
 
     <body>
         
-        <div class="container-fluid">
+        <div class="container-fluid front-page">
+            
+            
             <!--navbar-->
        
                 <nav class="navbar navbar-dark navbar-expand-lg">
@@ -47,9 +53,9 @@
                 
             <!--main-page-->
 
-            <div class="row">
+            <div class="row main-page">
                     <div class="col-lg-6 basic-info">
-                        <h1 class="big-des">Meet | Feed | Help</h1> <br>
+                        <h1 class="big-des">Meet | Feed | Date</h1> <br>
                         <h1 class="small-des">Meet cute cats, help them eat rats. </h1>
 
                         <!-- download buttons -->
@@ -68,53 +74,149 @@
         
 
         <div class="container-fluid features row">
-            <div class="fea1 col-lg-4">
+            <div class="fea col-lg-4">
                 <i class="fa-solid fa-circle-check fa-4x"></i>
                 <h2>Easy to use.</h2>
                 <p>So easy, even yo cat would do it.</p>
             </div>
 
-            <div class="fea2 col-lg-4">
+            <div class="fea col-lg-4">
                 <i class="fa-solid fa-bullseye fa-4x"></i>
                 <h2>Vast community.</h2>
                 <p>Meet people and their cats, from all over the places.</p>
             </div>
 
-            <div class="fea3 col-lg-4">
+            <div class="fea col-lg-4">
                 <i class="fa-solid fa-heart fa-4x"></i>
                 <h2>Will work, Guaranteed.</h2>
                 <p>Find the love of your cat, or homie for life. You name it. We have it.</p>
             </div>
         </div>
         
-        <!-- carrousel -->
-    
-        <div  class="reviews ">
-            <h2 style="font-weight: 700; font-size: 2rem; color: #fff;">I no longer abuse my master, I've found love of my life on kitCAT, her name's Sweetie. meow <i class="fa-solid fa-paw"></i></h2> 
-            <img class="review-img" src="https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="review-img-1">
-            <i class="reviewer">Cutie, Cuteland.</i>
-        </div>
+        <!-- reviews -->
+
+        <div id="review-carousel" class="carousel slide reviews" data-ride="false">
+            <div class="carousel-inner">
+              
+                <div class="carousel-item active">
+                    <h2 class="review-content">I no longer abuse my master, I've found love of my life on kitCAT, her name's Sweetie. meow <i class="fa-solid fa-paw"></i></h2> 
+                    <img class="review-img" src="images/review-1.jpeg" alt="review-img-1">
+                    <i class="reviewer">Cutie, Cuteland.</i>
+                </div>
+
+                <div class="carousel-item">
+                    <h2 class="review-content">I was unhappy with master, he doesn't meow<i class="fa-solid fa-paw"></i>, then I met cutie, though he calls me love or something, I dont understand. I am happy. meow <i class="fa-solid fa-paw"></i> </h2>
+                    <img class="review-img" src="images/review-2.jpg" alt="review-img-2">
+                    <i class="reviewer">Sweetie, Sweetland.</i>
+
+                </div>
+            </div>
+            
+            <!--buttons for carousel-->
+            
+            <a class="carousel-control-prev" href="#review-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#review-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" ></span>
+            </a>
+          </div>
 
 
         <!-- press -->
 
 
         <div class="press" style="text-align: center">
-            <img clas="press-img" style="width: 15%; 
-                margin: 0 40px 50px;
-                padding: 20px;
-                text-align: center"  
-                src="https://scet.berkeley.edu/wp-content/uploads/techcrunch-logo.png" alt="press-img-1">
-            <img clas="press-img" style="width: 13%; 
-                margin: 0 40px 50px;
-                padding: 20px;
-                text-align: center"  
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Business_Insider_Logo.svg/1200px-Business_Insider_Logo.svg.png" alt="press-img-2">
-            <img clas="press-img" style="width: 15%; 
-                margin: 0 40px 50px;
-                padding: 20px;
-                text-align: center"  
-                src="https://miro.medium.com/max/8978/1*s986xIGqhfsN8U--09_AdA.png" alt="press-img-3">
+            <img class="press-img" src="images/press-1.png" alt="press-img-1">
+            <img class="press-img Business_Insider_Logo" src="images/press-2.png" alt="press-img-2">
+            <img class="press-img" src="images/press-3.png" alt="press-img-3">
+        </div>
+
+
+        <!-- pricing -->
+
+        <div class="price-intro">
+            <h1 class="price-intro-head">A Plan For Every Cat's Wet Dream.</h1>
+            <p class="price-intro-des">Simple and affordable plans for you to choose from.</p>
+
+        </div>
+        
+
+        <div class="card-deck row pricing" style="text-align: center;">
+            
+            <div class="col-lg-4 col-md-6" >
+                <div class="card pricing-card">
+                    <div class="card-header pricing-header">
+                        <h3>Ragdoll</h3>
+                    </div>
+                    <div class="card-body">
+                        <h2>Free!</h2>
+                        <p class="pricing-font">5 Matches Per Day.</p>
+                        <p class="pricing-font">Match With All Free users.</p>
+                        <p class="pricing-font">Unlimited App Usage.</p>
+                        <button type="button" class="btn btn-outline-light">Sign up!</button>
+                    </div>
+                </div>    
+            </div>
+    
+            <div class="col-lg-4 col-md-6" >
+                <div class="card pricing-card">
+                    <div class="card-header pricing-header">
+                        <h3>British Shorthair</h3>
+                    </div>
+                    <div class="card-body" >
+                        <h2>500₹/Month</h2>
+                        <p class="pricing-font">Infinite Matches Per Day.</p>
+                        <p class="pricing-font">Match With All users.</p>
+                        <p class="pricing-font">Unlimited App Usage.</p>
+                        <button type="button" class="btn btn-outline-light">Sign up!</button>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <div class="card pricing-card">
+                    <div class="card-header pricing-header">
+                        <h3>Persian</h3>
+                    </div>
+                    <div class="card-body">
+                        <h2>1000₹/Month</h2>
+                        <p class="pricing-font">Priority Listing.</p>
+                        <p class="pricing-font">Infinite Matches Per Day.</p>
+                        <p class="pricing-font">Match With All users.</p>
+                        <button type="button" class="btn btn-outline-light">Sign up!</button>
+                    </div>
+                </div>        
+            </div>
+
+            
+
+
+        </div>
+
+        <!-- footer  -->
+        
+        <footer> 
+            <h1>Find the Love of your Cat Today!</h1>
+            <button type="button" class="btn btn-dark donw-btn"><i class="fa-brands fa-apple"></i>Download</button>
+            <button type="button" class="btn btn-outline-light down-btn"><i class="fa-brands fa-google-play"></i>Download</button>  
+        </footer>
+
+        <div class="row container-fluid contact-info">
+            <div class="col-4 contact">
+                <a href="https://www.facebook.com/BaldCaped/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="col-4 contact">
+                <a href="https://twitter.com/Bald_Caped"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="col-4 contact">
+                <a href="https://github.com/baldcaped"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="col-4 contact">
+                <a href="mailto:kumawatdarshan.1304@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+
+            <h4 class="cp">© Copyright 2022 kitCAT</h4>
         </div>
 
         </html>
