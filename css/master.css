@@ -1,27 +1,26 @@
 body {
     font-family: 'Montserrat';
     margin: 0%;
+    text-align: center;
 }
 
-.front-page {
-    background-color : #1B2430 ;
+h1, h2, h3 {
+    font-weight: 700;
 }
 
 @media (max-width : 1000px) {
     .main-page {
         text-align: center;
     }
-
-    .price-intro {
-        text-align: center;
-    }
-
 }
 
 @media only screen and (min-width: 992px) {
     .cat-1 {
         width: 90% !important; 
         padding: 0 !important;
+    }
+    .contact-info {
+        padding: 5% 40% ;   
     }
 }
 
@@ -31,7 +30,6 @@ h1 {
     line-height: 1.5;
 }
 h2 {    
-    font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.5;
 }
@@ -45,19 +43,11 @@ i {
     font-size: 17px;
 }
 
-.big-des {
-    color: white;
-    margin-top: 20px;
-    font-size: 2rem;
-   
-    
-}
-
+/* navbar */
 .full-brand {
     font-family: ubuntu;
     font-size: 25px;
-    font-weight: 700;
-    color: #c2d4d3;   
+    color: #ccdbdb;   
 }
 
 .brand {
@@ -65,20 +55,45 @@ i {
     font-size: 2.8rem;
 }
 
+.navbar {
+    margin-bottom: 1rem;
+}
+
+.nav-item {
+    margin: 0 18px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+nav-link:hover {
+    color : #ff4151 !important;
+}
+
+/* front page */
+
+#Front-page h1, button {
+    text-align: left !important;
+}
+
+.big-heading {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 5%;
+    font-size: 2rem;
+}
+
+.front-page {
+    background-color : #1B2430 ;
+}
+
 .cat-1 {
     transform: rotate(15deg);
     width: 50%;
     padding: 5%;
-/*     
-    position : relative;
-    top : 5px;
-    height : auto;
-*/
 }
 
-
 .basic-info {
-    color: #c2d4d3;
+    color: #ccdbdb;
 }
 
 .container-fluid {
@@ -86,50 +101,33 @@ i {
     margin: 0;
 }
 
-.nav-item {
-    margin: 0 18px;
-    font-size: 1.2rem;
-    font-family: "Montserrat";
-
-}
-
-nav-link:hover {
-    color : #ff4151 !important;
-}
-
-.navbar {
-    margin-bottom: 1rem;
-}
-
 /* Download buttons */
 
-.donw-btn {
+.down-btn {
     color: #ccdbdb;
     margin: 5% 3% 5% 0;
     font-weight: 300;
+    text-align: left;
 }
+
+.btn-dark {
+    margin-right: 2%;
+}
+
 
 /* features */
 
 .features {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     color: #1B2430;
-    text-align: center;
-    padding: 8% 32px 8%;
-    position: relative;
-    z-index: 1;
+    padding: 8% 32px;
 }
 
-.fea {
-    margin: 3% 0 3%;
-}
-
-.fa-4x {
+.feature-logo {
     color: #2b3a4d;
-
 }
 
-.fa-4x:hover {
+.feature-logo:hover {
     color: #1B2430;
 }
 
@@ -137,14 +135,12 @@ nav-link:hover {
 
 .review-content {
    margin-bottom: 1.2rem;
-   font-weight: 700; 
    font-size: 2rem; 
    color: #fff;
 }
 
 .reviews {
     padding: 7% 15% 5%;
-    text-align: center;
     background-color: #2b3a4d;
 }
 
@@ -156,7 +152,7 @@ nav-link:hover {
 
 .reviewer {
     font-weight: 500;
-    color: #c2d4d3;
+    color: #ccdbdb;
 }
 
 /* press */
@@ -176,8 +172,8 @@ nav-link:hover {
 
 /* pricing */
 
-.price-intro {
-    padding: 5% 8% 0;
+#plans {
+    padding: 5% ;
 }
 
 .price-intro-head {
@@ -190,7 +186,7 @@ nav-link:hover {
 }
 
 .pricing {
-    padding: 5%;
+    padding: 0 5% 0;
     margin: 0;
 }
 
@@ -218,9 +214,12 @@ nav-link:hover {
 footer {
     background-color: #1B2430;
     color: white;
-    text-align: center;
-    padding: 5%;
-    
+    padding: 8%;
+}
+
+.down-btn-footer {
+    margin: 5% 0% 0% 0;
+    font-weight: 300;
 }
 
 .footer-text {
@@ -228,35 +227,21 @@ footer {
 
 }
 
-.bottom-down {
-    margin-bottom: 5%
-}
+/* contact  */
 
 .contact {
-    width: 1%;
+    width: 1px;
     margin: 0 auto;
-    padding: 5%;
+    padding: 5% 0;
 }
 
-.cp {
-
-    font-size: 60% ;
-    text-align: center;
-    margin-top: 5%;
+.Copyright {
+    font-size: 70% ;
     color: #1B2430;
-    
-
 }
 
 .contact-info {
-    padding: 5% 30% ;
-}
-
-@media only screen and (min-width: 992px) {
-    .contact-info {
-        padding: 5% 40% ;   
-    }
-
+    margin: 0;
 }
 
 a {
@@ -266,3 +251,6 @@ a {
 a:hover {
     color: #1B2430;
 }
+
+
+
